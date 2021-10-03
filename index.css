@@ -1,0 +1,181 @@
+.banner {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 0.8%;
+    height: 450px;
+    background-color: dimgray;
+    overflow: hidden;
+}
+.slogan {
+    height : 70px;
+    background-color: firebrick;
+    color: antiquewhite;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px dimgrey;
+    padding-top: 5px;
+}
+.sw-img {
+    float: left;
+    height: 100%;
+    width: 30%;
+    margin-left: 0%;
+    background-image: url(images/steve-waugh-ani.jpg);
+    background-position: center;
+}
+
+.talk-space {
+    float: left;
+    height: 100%;
+    width:40%;
+}
+
+.ss-img {
+    float: left;
+    height: 100%;
+    width: 30%;
+    margin-right: 0%;
+    background-image: url(images/steve-smith-ani.jpg);
+    background-position: fill;
+    background-repeat: no-repeat;
+    background-size: 100% 102%;
+}
+
+.names {
+    margin-top: 102%;
+    height: 20%;
+    background-color: firebrick;
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.hi {
+    position: inherit;
+    height : 10%;
+    background-color: yellowgreen;
+    border-bottom-right-radius: 15px;
+    width : 80%;
+    margin-top: 3%;
+    text-align: center;
+    margin-right: auto;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+.hey{
+    position: inherit;
+    height : 10%;
+    background-color: rgb(226, 231, 216);
+    border-bottom-left-radius: 15px;
+    width : 80%;
+    margin-top: 5%;
+    text-align: center;
+    margin-left: auto;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+.ready {
+    position: inherit;
+    height : 10%;
+    background-color: yellowgreen;
+    border-bottom-right-radius: 15px;
+    width : 80%;
+    margin-top: 5%;
+    text-align: center;
+    margin-right: auto;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+.wait{
+    position: inherit;
+    height : 10%;
+    background-color: rgb(226, 231, 216);
+    border-bottom-left-radius: 15px;
+    width : 80%;
+    margin-top: 5%;
+    text-align: center;
+    margin-left: auto;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+.ques {
+    position: inherit;
+    height : 20%;
+    background-color: yellowgreen;
+    border-bottom-right-radius: 15px;
+    width : 80%;
+    margin-top: 5%;
+    text-align: center;
+    margin-right: auto;
+    font-weight: bolder;
+    padding-top: 15px;
+}
+
+.questions {
+    width: 80%;
+    margin: auto;
+}
+
+.ques1 {
+    margin-top: 1%;
+    height: 15%;
+    background-color: darkgoldenrod;
+    font-size: x-large;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: justify;
+    color: whitesmoke;
+    text-shadow: 1px lightslategray;
+    box-shadow: 2px 4px 4px 2px rgb(44, 41, 41);
+}
+
+.ques2 {
+    margin-top: 1%;
+    height: 10%;
+    background-color: darkgoldenrod;
+    font-size: x-large;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: justify;
+    color: whitesmoke;
+    text-shadow: 1px lightslategray;
+    box-shadow: 2px 4px 4px 2px rgb(44, 41, 41);
+}
+
+.ques3 {
+    margin-top: 1%;
+    height: 10%;
+    background-color: darkgoldenrod;
+    font-size: x-large;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: justify;
+    color: whitesmoke;
+    text-shadow: 1px lightslategray;
+    box-shadow: 2px 4px 4px 2px rgb(44, 41, 41);
+}
+.ans {
+    margin-top: 1%;
+    height: 10%;
+    background-color: rgb(121, 168, 45);
+    font-size: x-large;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 10px;
+    padding-bottom: 2%;
+    text-align: justify;
+    color: whitesmoke;
+    text-shadow: 1px lightslategray;
+    box-shadow: 2px 4px 4px 2px rgb(44, 41, 41);
+}
+
+.footer {
+    margin-top: 1%;
+    text-align: justify;
+    padding-left: 10%;
+}

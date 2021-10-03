@@ -1,0 +1,205 @@
+td {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: rgb(255, 254, 254);
+    width: 129px;
+    height: 25px;
+    margin-top: 2px;
+    text-align: center;
+    border: solid 1px;
+    opacity: 0.9;
+    
+  }
+  th {
+      background-color: rgb(43, 29, 29);
+      color:blanchedalmond;
+      text-align: center;
+  }
+  .nill {
+      border: none;
+      font-weight: bold;
+      opacity: 0;
+  }
+  .heading {
+    border: none;
+    font-weight: bolder;
+    opacity: 0.95;
+  }
+  .stat{
+      border: none;
+      font-size: large;
+      font-weight: bolder;
+  }
+
+  .year {
+      border-bottom: none;
+      border-top: none;
+      font-weight: bold;
+  }
+
+  .ipltable {
+      background-image: url(images/IPL-2021-2.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 130% 98%;
+      margin-left: 10%;
+      width: 80%;
+      margin-top: 1%;
+  }
+
+  .team {
+      border: none;
+      font-weight: bolder;
+      font-size: x-large;
+  }
+
+  #MI:hover {
+    box-shadow: 6px 10px 10px 6px #2b3752;
+    opacity: 1;
+    background-color: #89adfa;
+    height:35px;
+
+  }
+
+  #CSK:hover {
+    box-shadow: 6px 10px 10px 6px rgb(114, 120, 133);
+    opacity: 1;
+    background-color: #fff200;
+    height:35px;
+
+  }
+
+  #RCB:hover {
+    box-shadow: 6px 10px 10px 6px rgb(199, 95, 117);
+    opacity: 1;
+    background-color: #c26163;
+    height:35px;
+
+  }
+
+  #KXIP:hover {
+    box-shadow: 6px 10px 10px 6px rgb(94, 29, 43);
+    opacity: 1;
+    background-color: #e32948;
+    height:35px;
+
+  }
+
+  #SRH:hover {
+    box-shadow: 6px 10px 10px 6px rgb(109, 88, 61);
+    opacity: 1;
+    background-color: #f57c20;
+    height:35px;
+
+  }
+
+  #KKR:hover {
+    box-shadow: 6px 10px 10px 6px rgb(68, 61, 92);
+    opacity: 1;
+    background-color: #93648D;
+    height:35px;
+
+  }
+
+  #DC:hover {
+    box-shadow: 6px 10px 10px 6px rgb(61, 85, 136);
+    opacity: 1;
+    background-color: #4CC3D9;
+    height:35px;
+
+  }
+
+  #RR:hover {
+    box-shadow: 6px 10px 10px 6px rgb(86, 57, 94);
+    opacity: 1;
+    background-color: #fa66d7;
+    height:35px;
+
+  }
+
+  .headrow  {
+      height : 40px;
+      text-align: center;
+  }
+
+  .slogan {
+    height : 70px;
+    background-color: firebrick;
+    color: antiquewhite;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px dimgrey;
+    padding-top: 5px;
+}
+
+.text {
+    width: 80%;
+    margin-left: 10%;
+    margin-top:  2%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.summary {
+    margin-top: 1%;
+    height: 10%;
+    background-color: darkgoldenrod;
+    font-size: x-large;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: justify;
+    color: whitesmoke;
+    text-shadow: 1px lightslategray;
+    box-shadow: 2px 4px 4px 2px rgb(44, 41, 41);
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    padding-top: 25px;
+}
+.footer {
+    margin-top: 1%;
+    text-align: justify;
+    padding-left: 10%;
+}
+
+.captiontext {
+    width: 80%;
+    padding: 5 px;
+    margin-left: 15%;
+    flex: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.column {
+    width: 100%;
+    height: 270px;
+    padding: 5px;
+    text-align: center;
+    flex: auto;
+}
+.conclusion-text {
+    height: 5%;
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+    padding: 8px;
+    margin-top: 3%;
+    background-color: rgb(145, 72, 20);
+}
+.concludeipl{
+    width: 100%;
+    height: 1000px;
+    margin-top: 3%;
+    flex: 1;
+    overflow: hidden;
+}
+.column-conclusion{
+    float:left;
+    width: 25%;
+    text-align: justify;
+    padding: 2%;
+}

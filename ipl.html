@@ -1,0 +1,486 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> IPL </title>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="skill.css"/>
+    <link rel="stylesheet" type="text/css" href="iplstat.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"> FIT 5147 DATA VISUALIZATION PROJECT </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="ipl.html"> Ques 1
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="testhistory.html">Ques 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="drs.html"> Ques 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="conclusion.html"> Conclusion</a>
+              </li>
+            
+          </div>
+        </div>
+      </nav>
+      <div class="slogan">
+        <h1 class="slogan-text"> Home Game Phenomenon in Club Cricket </h1>
+    </div>
+
+    <div class="text">
+        <p> To say anything concrete about this let us examine the team performances from the Indian Premier League. <br> 
+            Check the following table Steve.. <br>
+            <span style="color:rgb(131, 14, 37);">Just Click on your favourite team! </span>
+        </p>
+    </div>
+      <div>
+        <table class="ipltable">
+            
+            <tr class="headrow">
+                <th> Team </th>
+                <th> Year </th>
+                <th> Home </th>
+                <th> Away </th>
+                <th> Neutral </th>
+            </tr>
+            <tr>
+                <td class="nill"> </td>
+                <td class="nill"> </td>
+                <td> 
+                    <table>
+                        <tr>
+                            <td class="heading"> Games </td>
+                            <td class="heading"> Wins </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="heading"> Games </td>
+                            <td class="heading"> Wins </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="heading"> Games </td>
+                            <td class="heading"> Wins </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td id="MI" class="team" onclick="mi_stat()"> MI </td>
+                <td id="08" class="year"> 2008 </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="08-home-game">  </td>
+                            <td class="stat" id="08-home-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="08-away-game">  </td>
+                            <td class="stat" id="08-away-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="08-neu-game">  </td>
+                            <td class="stat" id="08-neu-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td id="CSK" class="team" onclick="csk_stat()"> CSK </td>
+                <td id="09" class="year"> 2009 </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="09-home-game">  </td>
+                            <td class="stat" id="09-home-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="09-away-game">  </td>
+                            <td class="stat" id="09-away-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="09-neu-game">  </td>
+                            <td class="stat" id="09-neu-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td id="RCB" class="team" onclick="rcb_stat()"> RCB </td>
+                <td id="10" class="year"> 2010 </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="10-home-game">  </td>
+                            <td class="stat" id="10-home-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="10-away-game">  </td>
+                            <td class="stat" id="10-away-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="10-neu-game">  </td>
+                            <td class="stat" id="10-neu-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td id="KXIP" class="team" onclick="kxip_stat()"> KXIP </td>
+                <td id="11" class="year"> 2011 </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="11-home-game">  </td>
+                            <td class="stat" id="11-home-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="11-away-game">  </td>
+                            <td class="stat" id="11-away-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="11-neu-game">  </td>
+                            <td class="stat" id="11-neu-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td id="SRH" class="team" onclick="srh_stat()"> SRH </td>
+                <td id="12" class="year"> 2012 </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="12-home-game">  </td>
+                            <td class="stat" id="12-home-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="12-away-game">  </td>
+                            <td class="stat" id="12-away-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="12-neu-game">  </td>
+                            <td class="stat" id="12-neu-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td id="KKR" class="team" onclick="kkr_stat()"> KKR </td>
+                <td id="13" class="year"> 2013 </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="13-home-game">  </td>
+                            <td class="stat" id="13-home-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="13-away-game">  </td>
+                            <td class="stat" id="13-away-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="13-neu-game">  </td>
+                            <td class="stat" id="13-neu-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td id="DC" class="team" onclick="dc_stat()"> DC </td>
+                <td id="14" class="year"> 2014 </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="14-home-game">  </td>
+                            <td class="stat" id="14-home-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="14-away-game">  </td>
+                            <td class="stat" id="14-away-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="14-neu-game">  </td>
+                            <td class="stat" id="14-neu-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td id="RR" class="team" onclick="rr_stat()"> RR </td>
+                <td id="15" class="year"> 2015 </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="15-home-game">  </td>
+                            <td class="stat" id="15-home-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="15-away-game">  </td>
+                            <td class="stat" id="15-away-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="15-neu-game">  </td>
+                            <td class="stat" id="15-neu-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="nill">  </td>
+                <td id="16" class="year"> 2016 </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="16-home-game">  </td>
+                            <td class="stat" id="16-home-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="16-away-game">  </td>
+                            <td class="stat" id="16-away-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="16-neu-game">  </td>
+                            <td class="stat" id="16-neu-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="nill">  </td>
+                <td id="17" class="year"> 2017 </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="17-home-game">  </td>
+                            <td class="stat" id="17-home-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="17-away-game">  </td>
+                            <td class="stat" id="17-away-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="17-neu-game">  </td>
+                            <td class="stat" id="17-neu-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="nill">  </td>
+                <td id="18" class="year"> 2018 </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="18-home-game">  </td>
+                            <td class="stat" id="18-home-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="18-away-game">  </td>
+                            <td class="stat" id="18-away-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="18-neu-game">  </td>
+                            <td class="stat" id="18-neu-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="nill">  </td>
+                <td id="19" class="year"> 2019 </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="19-home-game">  </td>
+                            <td class="stat" id="19-home-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="19-away-game">  </td>
+                            <td class="stat" id="19-away-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="19-neu-game">  </td>
+                            <td class="stat" id="19-neu-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="nill">  </td>
+                <td id="20" class="year"> 2020 </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="20-home-game">  </td>
+                            <td class="stat" id="20-home-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="20-away-game">  </td>
+                            <td class="stat" id="20-away-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="stat" id="20-neu-game">  </td>
+                            <td class="stat" id="20-neu-win">  </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="summary">
+        <h2> In Summary </h2>
+    </div>
+    
+    <div id="skills">
+      <div id="skillmap">
+        <div class="skills-wrapper">
+          <div class="skills-sunburst"></div>
+          <div class="skills-chart">
+            <div id="skills-chart-breadcrumb"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="skillsdata.js"></script>
+    <script type="text/javascript" src="skill.js"></script>
+    <script type="text/javascript" src="teamstat.js"></script>
+    <script type="text/javascript">
+      // To place the graph in placeholder
+      d3.select(self.frameElement).style("height", "700px");
+  </script>
+    <div class="conclusion-text">
+        <a href="conclusion.html"> Check out the conclusion here.. </a>
+    </div>
+
+  <hr>
+  <div class="footer">
+      <footer>
+          <p>Author:  Kartik Pathak | 30920264 | Master of Information & Technology</p>
+        </footer>
+  </div>
+  </body>
+</html>
